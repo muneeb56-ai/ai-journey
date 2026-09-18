@@ -50,4 +50,24 @@ for persons in members:
 
     scores = [5 , 52,63,15,18,79,67,91]
     total = 0
+    count = 0
+    maximum = 0
+    minimum = 100
+    average = 0
+    passed = 0
     for score in scores:
+        total= total+score
+        count=count+1
+        if score>maximum:
+            maximum=score
+        if score<minimum:
+                minimum=score
+        if score>=50:
+             passed=passed +1
+
+    print("Total:", total)
+    print("Count:", count)
+    print("Maximum:", maximum)
+    print("Minimum:", minimum)
+    print("Average:", total/count)
+    print("Passed:", passed)
